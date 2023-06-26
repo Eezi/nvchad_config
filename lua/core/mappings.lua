@@ -131,6 +131,7 @@ M.lspconfig = {
     ["gd"] = {
       function()
         vim.lsp.buf.definition()
+        vim.diagnostic.setloclist({open = false})
       end,
       "LSP definition",
     },
